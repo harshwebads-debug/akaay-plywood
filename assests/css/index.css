@@ -1700,6 +1700,7 @@ p {
     color: #eee;
     margin-right: 12px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .footer2-social a:hover {
