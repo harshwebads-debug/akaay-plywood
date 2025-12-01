@@ -1990,4 +1990,52 @@ p {
 }
 
 
+/* ============ TABLET ============ */
+
+@media (max-width: 992px) {
+    .footer2-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+    .footer2-col h4 {
+        font-size: 18px;
+    }
+    .footer2-logo {
+        width: 120px;
+    }
+}
+
+
+/* ============ MOBILE ============ */
+
+@media (max-width: 600px) {
+    .akaay-footer-2 {
+        padding: 50px 25px 30px;
+    }
+    .footer2-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        text-align: left;
+    }
+    .footer2-social a {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .footer2-col h4 {
+        font-size: 18px;
+    }
+    .contact ul li {
+        align-items: flex-start;
+    }
+    .footer2-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .footer2-bottom {
+        font-size: 13px;
+        margin-top: 35px;
+    }
+}
+
+
 /* footer end */
