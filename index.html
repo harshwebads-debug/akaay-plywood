@@ -13,9 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- AOS CSS -->
@@ -23,80 +21,134 @@
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
+    <!-- Remix Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 
 <body>
 
 
-    <!-- Topbar -->
+    <!-- ===== Fixed Contact Icons ===== -->
+    <div class="fixed-icons">
+        <a href="tel:+919161819927" class="icon call" target="_blank"><i class="fas fa-phone-alt"></i></a>
+        <a href="mailto:vishnu21product@gmail.com" class="icon mail" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+
+
+    <!-- fix icons -->
+    <a href="https://wa.me/919161819927" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- fix icons -->
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Topbar Start -->
-    <div class="topbar bg-white border-bottom py-2">
-        <div class="container-fluid">
-            <div class="row align-items-center text-center text-md-start">
+    <div class="topbar" data-aos="fade-down">
+        <div class="container">
+            <div class="topbar-left d-none d-md-flex">
+                <small><i class="bi bi-geo-alt-fill"></i>GATA NO 212, Markhapur, Lakhimpur Kheri
+                </small>
+            </div>
 
-                <!-- Left Side (Emails + Numbers) -->
-                <div class="col-md-6 d-flex flex-column flex-md-row justify-content-md-start align-items-center small">
-                    <span class="me-md-3">
-                        <strong>Email:</strong> <a href="mailto:virgohsp@gmail.com"
-                            class="text-decoration-none">virgohsp@gmail.com</a>
-                    </span>
-                    <!-- <span class="me-md-3">
-                        <strong>Email:</strong> <a href="mailto:toronto@crompaply.com"
-                            class="text-decoration-none">toronto@crompaply.com</a>
-                    </span> -->
-                    <!-- <span class="d-block d-md-none mt-1">
-                        <strong>BC:</strong> 604-783-9662 | <strong>ON:</strong> 647-866-9529
-                    </span> -->
-                </div>
+            <div class="topbar-center">
+                <marquee behavior="scroll" direction="left" scrollamount="5">
+                    Akaay Plywood – Crafting Premium, Durable & Eco-Friendly Plywood for Every Project
+                </marquee>
 
-                <!-- Right Side (Numbers + Shipping Text) -->
-                <div
-                    class="col-md-6 d-flex flex-column flex-md-row justify-content-md-end align-items-center small mt-2 mt-md-0">
-                    <span class="me-md-3 d-none d-md-block">
-                        <a href="tel:7347012168" class="text-decoration-none text-dark">
-                            <i class="bi bi-telephone-fill"></i> 7347012168
-                        </a>
-                    </span>
-                    <span class="text-danger">
-                        🌲 Premium Quality Plywood – Strong, Durable & Reliable
-                    </span>
-                </div>
+            </div>
 
+            <div class="topbar-right d-none d-md-flex ms-auto">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61584401007578"><i
+                        class="bi bi-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/akaayplywood/"><i
+                        class="bi bi-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/110187519/admin/dashboard/"><i
+                        class="bi bi-linkedin"></i></a>
             </div>
         </div>
     </div>
     <!-- Topbar End -->
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
         <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="assests/images/logo/croma-logo.png" alt="Crompa Ply Logo" height="60">
+            <!--  Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assests/images/logo/Logo.png" alt="Karshini Eco Boards" height="75">
             </a>
 
-            <!-- Toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Links -->
-            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">SHOP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item">
+                        <a class="nav-link active home" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="plain-bagasse.html">Plain Bagasse Particle Board</a></li>
+                            <li><a class="dropdown-item" href="pre-laminated-boards.html">Pre-Laminated Bagasse Particle
+                                    Boards</a></li>
+                            <!-- <li><a class="dropdown-item" href="asian-walnut-dark-board.html">Asian Walnut Dark Board</a>
+                            </li>
+                            <li><a class="dropdown-item" href="cyprus-dark-boards.html">Cyprus Dark Board</a></li>
+                            <li><a class="dropdown-item" href="rolex-dark-boards.html">Rolex Dark Board</a></li>
+                            <li><a class="dropdown-item" href="straight-dark-boards.html">Straight Dark Board</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
+
+                <!-- Button -->
+                <!-- Button to download PDF -->
+                <a href="assets/images/" class="btn-theme" download>
+                    📄 Download Brochure
+                </a>
             </div>
         </div>
     </nav>
-
-
-
+    <!--  Navbar End -->
 
 
 
@@ -115,9 +167,9 @@
 
 
     <!-- Hero Section -->
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="hero-slider">
-            <div class="slide active" style="background-image: url('assests/images/banners/ban-1.png');">
+            <div class="slide active" style="background-image: url('assests/images/banners/akaay-ban-1.jpeg');">
             </div>
             <div class="slide" style="background-image: url('assests/images/banners/ban-2.png');"></div>
             <div class="slide" style="background-image: url('assests/images/banners/ban-3.jpeg');"></div>
@@ -138,12 +190,73 @@
 
             <h1>Transform Spaces <br> With Exceptional <br> Decorative Panels</h1>
             <p>
-                Crompa Ply supplies your projects with unique products and hardware
-                to ensure your dreams come true.
+                Crompa Ply supplies your projects with unique products and hardware to ensure your dreams come true.
             </p>
             <a href="#" class="btn-hero">View Our Brochure →</a>
         </div>
+    </section> -->
+
+
+
+
+
+
+    <!-- hero section -->
+    <section class="hero-section" data-aos="fade-in" data-aos-duration="1000">
+        <div class="hero-slider" data-aos="zoom-out" data-aos-duration="1200" data-aos-delay="100">
+
+            <div class="slide active" data-title="Akaay Plywood" data-subtitle="Premium Quality Manufacturer" data-content="High-strength, durable and elegant plywood crafted for homes, offices and commercial projects." style="background-image: url('assests/images/banners/akaay-ban-1.jpeg');">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="slide" data-title="Superior Craftsmanship" data-subtitle="Engineered for Perfection" data-content="Every plywood sheet is crafted with precision to deliver unmatched durability and stunning aesthetics." style="background-image: url('https://www.atootply.com/assets1/images/products/flush-doors.png');">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="slide" data-title="Trusted Quality" data-subtitle="Built for Long-Lasting Performance" data-content="Akaay Plywood provides termite-proof, waterproof and long-life plywood solutions for every need." style="background-image: url('https://www.alhabibpaneldoors.com/images/interior-item/lcd-wall-cabinet-design-furniture-for-living-room-ipc508.jpeg');">
+                <div class="overlay"></div>
+            </div>
+        </div>
+
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h1 id="slide-title" data-aos="fade-up" data-aos-delay="300">Akaay Plywood</h1>
+            <h3 id="slide-subtitle" data-aos="fade-up" data-aos-delay="400">Premium Quality Manufacturer</h3>
+            <p id="slide-content" data-aos="fade-up" data-aos-delay="500">
+                High-strength, durable and elegant plywood crafted for homes, offices and commercial projects.
+            </p>
+            <a href="plywood.html" class="hero-btn" data-aos="zoom-in" data-aos-delay="600">Explore Products</a>
+        </div>
+
+        <!-- Thumbnail Navigation -->
+        <div class="hero-thumbnails" data-aos="none">
+            <div class="thumb active" data-index="0" style="background-image: url('assests/images/banners/akaay-ban-1.jpeg');"></div>
+            <div class="thumb" data-index="1" style="background-image: url('https://www.atootply.com/assets1/images/products/flush-doors.png');"></div>
+            <div class="thumb" data-index="2" style="background-image: url('https://www.alhabibpaneldoors.com/images/interior-item/lcd-wall-cabinet-design-furniture-for-living-room-ipc508.jpeg');"></div>
+        </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -200,90 +313,293 @@
 
 
 
-    <!-- ========================= -->
-    <!-- Product Showcase Section Start -->
-    <!-- ========================= -->
-    <section class="rcp-products py-5">
+
+
+
+
+    <!-- About Us Section Start -->
+    <section id="akaay-about" class="position-relative text-light py-5" style="background-image: url('assests/images/background/47196.jpg'); background-attachment: fixed; background-size: cover; background-position: center;">
         <div class="container">
-            <div class="row gx-3 gy-3">
+            <div class="row align-items-center">
+                <!-- Left Side Content -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="akaay-about-heading display-4 fw-bold mb-3">About <span style="color: var(--primary);">Akaay Plywood</span></h2>
+                    <p class="akaay-about-text lead mb-4">
+                        Akaay Plywood has been redefining quality and durability in the plywood industry. Our commitment to premium craftsmanship and sustainable practices ensures that every product is a masterpiece. We combine traditional expertise with modern innovation to
+                        deliver products that last a lifetime.
+                    </p>
+                    <a href="#contact" class="btn-theme">Contact Us</a>
+                </div>
 
-                <!-- Card 1 -->
-                <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="rcp-card"
-                        style="background-image:url('https://img.waimaoniu.net/2093/2093-202505081150149210.jpg')">
-                        <div class="rcp-overlay">
-                            <h5>HIGOLD Hardware Products</h5>
-                            <p>Discover a wide range of high-quality hardware products.</p>
-                            <a href="#" class="btn btn-rcp">Discover Hardware</a>
+                <!-- Right Side Image -->
+                <div class="col-lg-6 text-center">
+                    <img src="assests/images/background/24870.jpg" alt="Akaay Plywood Products" class="img-fluid rounded shadow-lg akaay-about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="akaay-products-section">
+        <div class="container">
+
+            <h2 class="product-heading">OUR PRODUCTS</h2>
+            <p class="product-subtitle">
+                Explore our premium range of products designed for durability, style, and unmatched quality.
+            </p>
+
+            <div class="product-slider">
+
+                <button class="p-btn prev">&#10094;</button>
+
+                <div class="product-wrapper">
+                    <div class="product-track">
+
+                        <!-- PRODUCT 1 -->
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="assests/images/products/plywood.jpg">
+                            </div>
+                            <div class="p-info">
+                                <img src="https://cdn-icons-png.flaticon.com/512/891/891399.png" class="p-icon">
+                                <h4> Plywood</h4>
+                                <div class="underline"></div>
+                            </div>
                         </div>
+
+                        <!-- PRODUCT 2 -->
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="assests/images/products/block-boards.jpg">
+                            </div>
+                            <div class="p-info">
+                                <img src="https://cdn-icons-png.flaticon.com/512/891/891399.png" class="p-icon">
+                                <h4>Block Board</h4>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT 3 -->
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="assests/images/products/flush-door.jpg">
+                            </div>
+                            <div class="p-info">
+                                <img src="https://cdn-icons-png.flaticon.com/512/891/891399.png" class="p-icon">
+                                <h4>Doors</h4>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT 4 -->
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="https://www.hindustanwood.com/image/product/shuttering-plywood.webp">
+                            </div>
+                            <div class="p-info">
+                                <img src="https://cdn-icons-png.flaticon.com/512/891/891399.png" class="p-icon">
+                                <h4>Shuttering Plywood</h4>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT 5 -->
+                        <!-- <div class="product-card">
+                            <div class="img-box">
+                                <img src="https://i.ibb.co/Pw8szWf/sample5.jpg">
+                            </div>
+                            <div class="p-info">
+                                <img src="https://cdn-icons-png.flaticon.com/512/891/891399.png" class="p-icon">
+                                <h4>Flush Door</h4>
+                                <div class="underline"></div>
+                            </div>
+                        </div> -->
+
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
-                    <div class="rcp-card"
-                        style="background-image:url('https://www.architectandinteriorsindia.com/cloud/2023/10/09/duroply-.png')">
-                        <div class="rcp-overlay">
-                            <h5>Plywood</h5>
-                            <p>Versatile & Durable</p>
-                            <a href="#" class="btn btn-rcp">Explore Plywood</a>
-                        </div>
-                    </div>
+                <button class="p-btn next">&#10095;</button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let tracks = document.querySelector(".product-track");
+        let cards = document.querySelectorAll(".product-card");
+
+        let i = 0;
+        let max = cards.length - 3;
+
+        document.querySelector(".next").onclick = () => {
+            if (i < max) {
+                i++;
+                tracks.style.transform = `translateX(-${i * 33.33}%)`;
+            }
+        }
+
+        document.querySelector(".prev").onclick = () => {
+            if (i > 0) {
+                i--;
+                tracks.style.transform = `translateX(-${i * 33.33}%)`;
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- features section -->
+    <section class="akaay-feature-section">
+        <div class="container">
+            <h2 class="feature-heading">Premium Features of <span style="color: #ED1C24;"> Akaay Plywood </span></h2>
+            <p class="feature-sub">
+                Engineered for durability, protection and long-lasting performance.
+            </p>
+        </div>
+
+        <!-- Sliding Wrapper -->
+        <div class="feature-slider">
+            <div class="feature-track">
+
+                <div class="f-card">
+                    <i class="ri-shield-check-line"></i>
+                    <h3>Termite Proof</h3>
+                    <p>Guaranteed protection against termites and borers.</p>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="col-md-4" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
-                    <div class="rcp-card"
-                        style="background-image:url('https://shop.fabriplasmetal.com/cdn/shop/collections/Square_Panels_2023_Tree_Branch_VP4.webp?v=1687042500&width=2400')">
-                        <div class="rcp-overlay">
-                            <h5>Decorative Panels</h5>
-                            <p>Stylish & Functional</p>
-                            <a href="#" class="btn btn-rcp">Discover Panels</a>
-                        </div>
-                    </div>
+                <div class="f-card">
+                    <i class="ri-drop-line"></i>
+                    <h3>Water Resistant</h3>
+                    <p>Superior moisture protection for all seasons.</p>
                 </div>
 
-                <!-- Card 4 -->
-                <div class="col-md-4" data-aos="fade-up-right" data-aos-delay="600" data-aos-duration="1000">
-                    <div class="rcp-card" style="background-image:url('assests/images/products/1.png')">
-                        <div class="rcp-overlay">
-                            <h5>Royal Select Facciata Collection</h5>
-                            <p>Elevate Your Space with Premium Panels</p>
-                            <a href="#" class="btn btn-rcp">Explore Royal Select</a>
-                        </div>
-                    </div>
+                <div class="f-card">
+                    <i class="ri-fire-line"></i>
+                    <h3>Fire Resistant</h3>
+                    <p>Engineered with advanced fire-resistant technology.</p>
                 </div>
 
-                <!-- Card 5 -->
-                <div class="col-md-4" data-aos="zoom-out" data-aos-delay="800" data-aos-duration="1000">
-                    <div class="rcp-card"
-                        style="background-image:url('https://m.media-amazon.com/images/I/51w+71h+cTL.jpg')">
-                        <div class="rcp-overlay">
-                            <h5>Handle</h5>
-                            <p>The Perfect Blend Of Durability And Style</p>
-                            <a href="#" class="btn btn-rcp">Explore Handle</a>
-                        </div>
-                    </div>
+                <div class="f-card">
+                    <i class="ri-leaf-line"></i>
+                    <h3>Eco Friendly</h3>
+                    <p>Manufactured with sustainable and safe materials.</p>
                 </div>
 
-                <!-- Card 6 -->
-                <div class="col-md-4" data-aos="fade-up-left" data-aos-delay="1000" data-aos-duration="1000">
-                    <div class="rcp-card"
-                        style="background-image:url('https://bizimages.withfloats.com/actual/677d0d106a7b5548dedd5419.jpg')">
-                        <div class="rcp-overlay">
-                            <h5>Edge-banding Tapes</h5>
-                            <p>Hi-quality edge tapes available in different lengths and thicknesses.</p>
-                            <a href="#" class="btn btn-rcp">Discover Edge Banding</a>
-                        </div>
-                    </div>
+                <div class="f-card">
+                    <i class="ri-building-line"></i>
+                    <h3>High Strength</h3>
+                    <p>Exceptional density & structural durability.</p>
+                </div>
+
+                <!-- Duplicate cards for smooth infinite loop -->
+                <div class="f-card">
+                    <i class="ri-shield-check-line"></i>
+                    <h3>Termite Proof</h3>
+                    <p>Guaranteed protection against termites and borers.</p>
+                </div>
+
+                <div class="f-card">
+                    <i class="ri-drop-line"></i>
+                    <h3>Water Resistant</h3>
+                    <p>Superior moisture protection for all seasons.</p>
                 </div>
 
             </div>
         </div>
     </section>
-    <!-- ========================= -->
-    <!-- Product Showcase Section End -->
-    <!-- ========================= -->
+
+    <!-- features section -->
+
+
+
+
+
+
+
+    <script>
+        const boxes = document.querySelectorAll(".slide");
+
+        function slideAnimation() {
+            boxes.forEach(box => {
+                let boxTop = box.getBoundingClientRect().top;
+                let triggerPoint = window.innerHeight - 100;
+
+                if (boxTop < triggerPoint) {
+                    box.classList.add("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", slideAnimation);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -300,15 +616,12 @@
                 <div class="col-lg-7 col-md-9 col-12">
                     <div class="content">
                         <h1 class="fw-bold" data-aos="fade-up" data-aos-duration="1000">
-                            Transform Your Spaces <br>
-                            With Premium Eco-friendly Wooden Products
+                            Transform Your Spaces <br> With Premium Eco-friendly Wooden Products
                         </h1>
                         <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            Elevate your interiors with our exceptional wooden products.
-                            Explore our collection now.
+                            Elevate your interiors with our exceptional wooden products. Explore our collection now.
                         </p>
-                        <a href="#" class="btn btn-shop" data-aos="zoom-in" data-aos-delay="400"
-                            data-aos-duration="1000">
+                        <a href="#" class="btn btn-shop" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
                             <i class="fas fa-shopping-cart"></i> Shop now !
                         </a>
                     </div>
@@ -324,67 +637,6 @@
 
 
 
-
-
-
-    <!-- products slider -->
-    <section class="product-slider text-center">
-        <div class="container-product-slider">
-            <h2 class="heading-main slider-heading">Our Featured Products</h2>
-            <p class="text-muted mb-5">
-                Explore our premium range of plywood solutions — crafted with strength, durability,
-                and style to suit every need from interiors to exteriors.
-            </p>
-            <div class="slider-wrapper">
-                <div class="product-slider-track">
-
-                    <!-- Product 1 -->
-                    <div class="product-cards">
-                        <img src="https://frosthardwood.com/images/hardwood-plywoods.jpg" alt="Product 1">
-                        <h3>Plywood</h3>
-                        <p>Durable, premium-quality plywood suitable for furniture and construction.</p>
-                        <button class="product-btn">View Details</button>
-                    </div>
-
-                    <!-- Product 2 -->
-                    <div class="product-cards">
-                        <img src="https://hanson-plywood.co.uk/wp-content/uploads/2017/07/AdobeStock_138586021-1-e1516268496239.jpg"
-                            alt="Product 2">
-                        <h3>Block Board</h3>
-                        <p>Strong and versatile block boards crafted for stability and performance.</p>
-                        <button class="product-btn">View Details</button>
-                    </div>
-
-                    <!-- Product 3 -->
-                    <div class="product-cards">
-                        <img src="https://global-uploads.webflow.com/63ec734487e69f1cc0fcd3f8/64a39eb3f0df3bde4555a2a8_WWTT_Website_Product_MarinePlywood_3.jpg"
-                            alt="Product 3">
-                        <h3>Marine Plywood</h3>
-                        <p>Water-resistant plywood perfect for kitchens, bathrooms, and exteriors.</p>
-                        <button class="product-btn">View Details</button>
-                    </div>
-
-                    <!-- Product 4 -->
-                    <div class="product-cards">
-                        <img src="https://www.hindustanwood.com/image/product/shuttering-plywood.webp" alt="Product 4">
-                        <h3>Shuttering Plywood</h3>
-                        <p>Engineered for high strength and reusable shuttering applications.</p>
-                        <button class="product-btn">View Details</button>
-                    </div>
-
-                    <!-- Product 5 -->
-                    <div class="product-cards">
-                        <img src="https://img.freepik.com/premium-photo/fire-room-where-camshaft-burns_334333-3422.jpg"
-                            alt="Product 5">
-                        <h3>Fire Retardant Ply</h3>
-                        <p>Safety-first plywood with fire-resistant properties for secure spaces.</p>
-                        <button class="product-btn">View Details</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
@@ -412,20 +664,20 @@
             <!-- Right Content -->
             <div class="about-content" data-aos="fade-left" data-aos-delay="200">
                 <p class="subtitle">Who We Are</p>
-                <h1 class="title">We are <span>Croma Ply</span></h1>
+                <h1 class="title">We are <span>Akaay Plywood</span></h1>
                 <p class="desc">
-                    Croma Ply is one of India’s trusted names in premium quality plywood. <br>
-                    We are not just dealers — we are direct manufacturers and suppliers, delivering durable, stylish,
-                    and reliable plywood solutions for homes, offices, and commercial spaces.
+                    Akaay Plywood is one of India’s most trusted manufacturers of premium-grade plywood.
+                    <br>We deliver high-strength, durable, and stylish plywood solutions for homes, offices, and commercial spaces — ensuring long-lasting performance and unmatched reliability.
                 </p>
 
                 <div class="featuresss">
                     <div class="featureee" data-aos="zoom-in" data-aos-delay="300">
                         <i class="bi bi-people-fill icon"></i>
                         <div>
-                            <h3>A Trusted Supplier</h3>
-                            <p>Thousands of architects, builders, and households rely on Croma Ply for strength and
-                                performance.</p>
+                            <h3>A Trusted Manufacturer</h3>
+                            <p>
+                                Thousands of builders, architects, and dealers rely on Akaay Plywood for consistent quality and superior craftsmanship.
+                            </p>
                         </div>
                     </div>
 
@@ -433,16 +685,19 @@
                         <i class="bi bi-currency-dollar icon"></i>
                         <div>
                             <h3>Best Value Pricing</h3>
-                            <p>We provide premium plywood at competitive prices without compromising on quality.</p>
+                            <p>
+                                We offer premium plywood at the most competitive market prices while maintaining top-tier standards.
+                            </p>
                         </div>
                     </div>
 
                     <div class="featureee" data-aos="zoom-in" data-aos-delay="500">
                         <i class="bi bi-h-square-fill icon"></i>
                         <div>
-                            <h3>Unmatched Quality</h3>
-                            <p>Our plywood is built to last — resistant to termites, water, and wear, ensuring long-term
-                                durability.</p>
+                            <h3>Premium & Durable Quality</h3>
+                            <p>
+                                Our plywood is termite-proof, waterproof, and engineered for long-term durability across all environments.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -462,13 +717,13 @@
 
 
 
+
     <section class="rc-section">
         <div class="rc-overlay"></div>
         <div class="rc-content">
-            <h2>Discover the Strength of Croma Ply</h2>
+            <h2>Discover the Strength of Akaay Plywood</h2>
             <p>
-                At Croma Ply, we deliver premium quality plywood that combines strength, durability, and elegance —
-                perfect for homes, offices, and commercial projects.
+                At Akaay Plywood, we deliver premium quality plywood that combines strength, durability, and elegance — perfect for homes, offices, and commercial projects.
             </p>
             <a href="#" class="rc-btn">Explore Our Plywood Range</a>
         </div>
@@ -482,9 +737,10 @@
 
 
 
+
     <section class="testimonial-section">
         <p class="section-subtitle">Testimonials</p>
-        <h2 class="section-title">What Our Clients Say About Croma Ply</h2>
+        <h2 class="section-title">What Our Clients Say About Akaay Plywood</h2>
 
         <!-- Swiper Container -->
         <div class="swiper mySwiper">
@@ -502,8 +758,7 @@
                             </div>
                         </div>
                         <p class="testimonial-text">
-                            Croma Ply offers excellent plywood quality. The finish and strength of the material
-                            completely transformed the look of my interiors. Truly reliable!
+                            Akaay Plywood offers excellent plywood quality. The finish and strength of the material completely transformed the look of my interiors. Truly reliable!
                         </p>
                     </div>
                 </div>
@@ -520,8 +775,7 @@
                             </div>
                         </div>
                         <p class="testimonial-text">
-                            Great experience with Croma Ply! Their products are durable and stylish,
-                            and the team provided excellent support throughout my project.
+                            Great experience with Akaay Plywood! Their products are durable and stylish, and the team provided excellent support throughout my project.
                         </p>
                     </div>
                 </div>
@@ -538,8 +792,7 @@
                             </div>
                         </div>
                         <p class="testimonial-text">
-                            The plywood from Croma Ply is strong and long-lasting. Delivery was a bit late,
-                            but the quality of the product made up for it completely.
+                            The plywood from Akaay Plywood is strong and long-lasting. Delivery was a bit late, but the quality of the product made up for it completely.
                         </p>
                     </div>
                 </div>
@@ -568,80 +821,68 @@
 
 
 
+    <footer class="akaay-footer-2">
+        <div class="footer2-container">
 
+            <!-- Brand -->
+            <div class="footer2-col brand">
+                <img src="assests/images/logo/Logo.png" class="footer2-logo" alt="Akaay Plywood">
 
+                <p>Akaay Plywood is a premium manufacturer of plywood, blockboard, doors and shuttering plywood crafted with unmatched durability and luxury finish.</p>
 
-
-
-    <!-- ================= Footer Start ================= -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-
-                <!-- Quick Links -->
-                <div class="footer-col">
-                    <h4>QUICK LINKS</h4>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> Home</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> Blogs</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> Gallery</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Products -->
-                <div class="footer-col">
-                    <h4>PRODUCTS</h4>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> Plywood</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> Shuttering Plywood</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> Block Board</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> Calibrated Board</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> Fire Retardant Plywood</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i> Marine Plywood</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact -->
-                <div class="footer-col con-footer">
-                    <h4>CONTACT</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Head Office: 123 Business Street, New Delhi, India</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Branch Office: 456 Industrial Area, Mumbai, India</p>
-                </div>
-
-                <!-- Newsletter -->
-                <div class="footer-col newsletter">
-                    <h4>NEWSLETTER</h4>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Email Address" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <p class="contact-info">Mobile: +91 7892474250</p>
-                    <p class="contact-info">Email: info@yourdomain.com</p>
+                <div class="footer2-social">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-whatsapp-line"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
                 </div>
             </div>
 
-            <hr>
-
-            <div class="footer-bottom">
-                <div class="logo">
-                    <img src="assests/images/logo/croma-logo.png" alt="Logo">
-
-                </div>
-                <p>Copyright © 2025 CROMA PLY. All Rights Reserved. || Designed By Webads India</p>
+            <!-- Products -->
+            <div class="footer2-col">
+                <h4>Products</h4>
+                <ul style="padding-left: 0px;">
+                    <li><a href="#">Alternate Plywood</a></li>
+                    <li><a href="#">Block Board</a></li>
+                    <li><a href="#">Flush Door</a></li>
+                    <li><a href="#">Shuttering Plywood</a></li>
+                    <li><a href="#">Laminates</a></li>
+                </ul>
             </div>
+
+            <!-- Quick Links -->
+            <div class="footer2-col">
+                <h4>Quick Links</h4>
+                <ul style="padding-left: 0px;">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer2-col contact">
+                <h4>Contact</h4>
+                <ul style="padding-left: 0px;">
+                    <li><i class="ri-phone-fill"></i> +91 98765 43210</li>
+                    <li><i class="ri-mail-line"></i> info@akaayplywood.com</li>
+                    <li><i class="ri-map-pin-line"></i> GATA NO 212, Markhapur, Lakhimpur Kheri</li>
+                </ul>
+
+                <a href="#" class="footer2-btn">Enquiry Now</a>
+            </div>
+
+        </div>
+
+        <div class="footer2-bottom">
+            © 2025 Akaay Plywood. All Rights Reserved. Designer by WEB ADS INDIA
         </div>
     </footer>
-    <!-- ================= Footer End ================= -->
+
+
+
 
 
 
@@ -693,17 +934,6 @@
 
 
 
-    <script>
-        const track = document.querySelector(".product-slider-track");
-
-        track.addEventListener("mouseover", () => {
-            track.style.animationPlayState = "paused";
-        });
-
-        track.addEventListener("mouseleave", () => {
-            track.style.animationPlayState = "running";
-        });
-    </script>
 
     <!-- products slider -->
 
@@ -726,24 +956,57 @@
 
 
 
-    <script>/* Slider Script */
+    <script>
         const slides = document.querySelectorAll('.slide');
+        const title = document.getElementById('slide-title');
+        const subtitle = document.getElementById('slide-subtitle');
+        const thumbs = document.querySelectorAll('.hero-thumbnails .thumb');
+
         let current = 0;
 
-        function changeSlide() {
-            slides[current].classList.remove('active');
-            current = (current + 1) % slides.length;
-            slides[current].classList.add('active');
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                thumbs[i].classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
+            thumbs[index].classList.add('active');
+
+            const activeSlide = slides[index];
+            title.textContent = activeSlide.dataset.title;
+            subtitle.textContent = activeSlide.dataset.subtitle;
+
+            // Slide container transform for smooth horizontal movement
+            document.querySelector('.hero-slider').style.transform = `translateX(-${index * 100}%)`;
         }
 
-        setInterval(changeSlide, 4000); // every 6s change
+        // Auto slide every 5 seconds
+        let slideInterval = setInterval(() => {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        }, 5000);
+
+        // Thumbnail click navigation
+        thumbs.forEach((thumb, i) => {
+            thumb.addEventListener('click', () => {
+                current = i;
+                showSlide(current);
+                clearInterval(slideInterval);
+                slideInterval = setInterval(() => {
+                    current = (current + 1) % slides.length;
+                    showSlide(current);
+                }, 5000);
+            });
+        });
     </script>
 
 
     <script>
         const faders = document.querySelectorAll('.fade-in');
-        const appearOptions = { threshold: 0.2 };
-        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+        const appearOptions = {
+            threshold: 0.2
+        };
+        const appearOnScroll = new IntersectionObserver(function(entries, observer) {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return;
                 entry.target.classList.add("appear");
@@ -760,14 +1023,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1200,  // animation speed
-            once: true       // animation only once
+            duration: 1200, // animation speed
+            once: true // animation only once
         });
-
     </script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
