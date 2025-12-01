@@ -341,7 +341,7 @@ p {
 
 .navbar-nav .nav-link {
     color: var(--secondary);
-    font-weight: 550;
+    font-weight: 600;
     margin-right: 15px;
     padding: 10px 15px;
     position: relative;
@@ -351,7 +351,7 @@ p {
     z-index: 1;
     border-radius: 6px;
     /* Same as home */
-    font-size: 19px !important;
+    font-size: 18px !important;
 }
 
 
