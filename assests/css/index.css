@@ -1006,9 +1006,6 @@ p {
 
 /* products section */
 
-
-/* section layout */
-
 .akaay-products-section {
     padding: 60px 0;
     background: #fff;
@@ -1124,6 +1121,45 @@ p {
     height: 2px;
     background: var(--primary);
     margin: auto;
+}
+
+
+/* RESPONSIVE PRODUCT CARDS */
+
+
+/* Tablet - 2 cards */
+
+@media (max-width: 992px) {
+    .product-card {
+        min-width: 48%;
+    }
+    .img-box img {
+        height: 320px;
+    }
+}
+
+
+/* Large Mobile - 1.5 cards (optional smooth feel) */
+
+@media (max-width: 768px) {
+    .product-card {
+        min-width: 70%;
+    }
+    .img-box img {
+        height: 300px;
+    }
+}
+
+
+/* Mobile - 1 card */
+
+@media (max-width: 576px) {
+    .product-card {
+        min-width: 100%;
+    }
+    .img-box img {
+        height: 260px;
+    }
 }
 
 

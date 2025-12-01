@@ -424,18 +424,6 @@
                             </div>
                         </div>
 
-                        <!-- PRODUCT 5 -->
-                        <!-- <div class="product-card">
-                            <div class="img-box">
-                                <img src="https://i.ibb.co/Pw8szWf/sample5.jpg">
-                            </div>
-                            <div class="p-info">
-                                <img src="assests/images/icons/plywood.png" class="p-icon">
-                                <h4>Flush Door</h4>
-                                <div class="underline"></div>
-                            </div>
-                        </div> -->
-
                     </div>
                 </div>
 
@@ -456,23 +444,32 @@
 
 
     <script>
-        let tracks = document.querySelector(".product-track");
+        let track = document.querySelector(".product-track");
         let cards = document.querySelectorAll(".product-card");
+        let wrapper = document.querySelector(".product-wrapper");
 
         let i = 0;
-        let max = cards.length - 3;
+
+        function updateSlider() {
+            let cardWidth = cards[0].offsetWidth + 25;
+            let visibleWidth = wrapper.offsetWidth;
+            max = Math.ceil(cards.length - (visibleWidth / cardWidth));
+        }
+
+        updateSlider();
+        window.addEventListener("resize", updateSlider);
 
         document.querySelector(".next").onclick = () => {
             if (i < max) {
                 i++;
-                tracks.style.transform = `translateX(-${i * 33.33}%)`;
+                track.style.transform = `translateX(-${i * (cards[0].offsetWidth + 25)}px)`;
             }
         }
 
         document.querySelector(".prev").onclick = () => {
             if (i > 0) {
                 i--;
-                tracks.style.transform = `translateX(-${i * 33.33}%)`;
+                track.style.transform = `translateX(-${i * (cards[0].offsetWidth + 25)}px)`;
             }
         }
     </script>
