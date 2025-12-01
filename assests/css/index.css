@@ -821,6 +821,197 @@ p {
 }
 
 
+/* Hero Banner */
+
+.hero-banner {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/about-us/team-img.jpeg') center/cover no-repeat;
+    z-index: 1;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-banner .container {
+    position: relative;
+    z-index: 10;
+}
+
+
+/* Decorative overlays */
+
+.hero-overlay-left,
+.hero-overlay-right {
+    position: absolute;
+    width: 50px;
+    height: 500px;
+    background: var(--bs-primary);
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.hero-overlay-left {
+    top: -150px;
+    left: -25px;
+}
+
+.hero-overlay-right {
+    bottom: -150px;
+    right: -25px;
+}
+
+
+/* Banner Text */
+
+.hero-content {
+    color: #fff;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    /* Golden for premium feel */
+    margin-bottom: 0.5rem;
+}
+
+.heroe-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff !important;
+}
+
+
+/* Button Styling */
+
+.hero-btn-wrapper .hero-btn {
+    background: linear-gradient(90deg, var(--bs-primary), var(--bs-secondary));
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 35px;
+    border-radius: 0;
+    /* Removed rounded corners */
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.hero-btn-wrapper .hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, var(--bs-secondary), var(--bs-primary));
+}
+
+
+/* Optional small decorative dark overlays for depth */
+
+.hero-banner::before,
+.hero-banner::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.3);
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.hero-banner::before {
+    top: -120px;
+    left: 0;
+}
+
+.hero-banner::after {
+    bottom: -120px;
+    right: 0;
+}
+
+
+/* Responsive */
+
+@media (max-width: 991px) {
+    .heroe-title {
+        font-size: 2rem;
+    }
+    .hero-btn-wrapper {
+        justify-content: flex-start !important;
+        margin-top: 20px;
+    }
+}
+
+
+/* about us page end */
+
+
+/* Default: sab images visible on large screens */
+
+.img-box {
+    display: block;
+}
+
+
+/* Small devices (below 768px) par sirf center image visible */
+
+@media (max-width: 767px) {
+    .img-left,
+    .img-right {
+        display: none !important;
+    }
+    .img-center {
+        display: block !important;
+        margin: 0 auto;
+        position: initial !important;
+    }
+    .img-center img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        bottom: 0px;
+    }
+    .img-text {
+        text-align: center;
+        /* display: none; */
+    }
+    .img-box {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-content {
+        top: 30%;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero-content {
+        top: 23%;
+    }
+    .er-hero-btn {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .hero-content {
+        top: 19%;
+    }
+    .er-hero-btn {
+        padding: 10px;
+    }
+    .hero-content h1 {
+        font-size: 1.8rem !important;
+    }
+    .hero-content p {
+        font-size: 20px;
+    }
+}
+
+
 /* hero section */
 
 
