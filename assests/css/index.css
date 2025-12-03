@@ -1100,7 +1100,6 @@ p {
 .features-section {
     background-color: var(--white);
     border-bottom: 4px solid rgba(49, 107, 168, 0.2);
-    /* light primary accent */
 }
 
 .feature-box {
@@ -1197,13 +1196,12 @@ p {
 
 /* products section */
 
+
+/* 
 .akaay-products-section {
     padding: 60px 0;
     background: #fff;
 }
-
-
-/* heading */
 
 .product-heading {
     text-align: center;
@@ -1220,9 +1218,6 @@ p {
     color: #555;
     font-weight: 700;
 }
-
-
-/* slider */
 
 .product-slider {
     position: relative;
@@ -1257,16 +1252,10 @@ p {
     transition: 0.5s ease;
 }
 
-
-/* cards */
-
 .product-card {
     min-width: 32.2%;
     background: #fff;
 }
-
-
-/* IMAGE BOX */
 
 .img-box {
     overflow: hidden;
@@ -1280,15 +1269,9 @@ p {
     transition: 0.4s ease;
 }
 
-
-/* Hover Zoom */
-
 .product-card:hover img {
     transform: scale(1.07);
 }
-
-
-/* info */
 
 .p-info {
     text-align: center;
@@ -1314,12 +1297,6 @@ p {
     margin: auto;
 }
 
-
-/* RESPONSIVE PRODUCT CARDS */
-
-
-/* Tablet - 2 cards */
-
 @media (max-width: 992px) {
     .product-card {
         min-width: 48%;
@@ -1328,9 +1305,6 @@ p {
         height: 320px;
     }
 }
-
-
-/* Large Mobile - 1.5 cards (optional smooth feel) */
 
 @media (max-width: 768px) {
     .product-card {
@@ -1341,9 +1315,6 @@ p {
     }
 }
 
-
-/* Mobile - 1 card */
-
 @media (max-width: 576px) {
     .product-card {
         min-width: 100%;
@@ -1351,10 +1322,182 @@ p {
     .img-box img {
         height: 260px;
     }
+} */
+
+
+/* TOP STRIP SECTION */
+
+.akaay-top-strip {
+    width: 100%;
+    background: #000;
+    padding: 16px 0;
+}
+
+.strip-content {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-light);
+    padding: 30px;
+}
+
+.strip-content h3 {
+    font-size: 23px;
+}
+
+.strip-btn {
+    background: var(--primary-light);
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.strip-btn:hover {
+    background: #fff;
+    color: var(--primary);
 }
 
 
-/* products section */
+/* MAIN PRODUCT SECTION */
+
+
+/* MAIN PRODUCT SECTION */
+
+.akaay-products-section {
+    position: relative;
+    background: url('https://www.decorilla.com/online-decorating/wp-content/uploads/2022/06/Open-home-with-mid-century-modern-interior-design-2-scaled.jpeg') center/cover no-repeat fixed;
+    padding: 80px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+
+/* BLACK OVERLAY */
+
+.akaay-products-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    /* ❗ Adjust Darkness: 0.65 is perfect premium */
+    z-index: -1;
+}
+
+.akaay-title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffff;
+    /* your theme color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    /* center ke liye perfect */
+    margin-bottom: 40px;
+}
+
+
+/* underline */
+
+.akaay-title::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    /* size of line */
+    height: 4px;
+    border-radius: 2px;
+    background: var(--primary);
+    /* your brand secondary color */
+}
+
+
+/* GRID CENTERED WITH LEFT/RIGHT SPACE */
+
+.akaay-product-center {
+    width: 80%;
+    /* left & right space = PREMIUM LOOK */
+    margin: auto;
+    /* center */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 per row */
+    gap: 40px;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+    background: #000;
+    border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: .4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* BOTTOM BLACK INFO BAR */
+
+.product-info {
+    background: #000;
+    color: #fff;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.product-info .icon {
+    background: #ffbe00;
+    color: black;
+    padding: 6px 8px;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+    .akaay-product-center {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .akaay-product-center {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* promo section */
 
 .promo-section {
     position: relative;
@@ -1371,7 +1514,6 @@ p {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    /* black overlay */
 }
 
 .promo-section .content {
@@ -1406,9 +1548,6 @@ p {
     border: 1px solid #fff !important;
 }
 
-
-/* Responsive text sizes */
-
 @media (max-width: 992px) {
     .promo-section h1 {
         font-size: 2rem !important;
@@ -1427,6 +1566,8 @@ p {
 
 /* features section */
 
+
+/* 
 .akaay-feature-section {
     padding: 80px 0 60px;
     background: #ffffff;
@@ -1447,7 +1588,7 @@ p {
 }
 
 
-/* SLIDER OUTER WRAPPER */
+
 
 .feature-slider {
     overflow: hidden;
@@ -1456,13 +1597,13 @@ p {
 }
 
 
-/* TRACK THAT MOVES */
+
 
 .feature-track {
     display: flex;
     gap: 25px;
     animation: slideRL 22s linear infinite;
-}
+} */
 
 
 /* CARD DESIGN */
@@ -1739,6 +1880,125 @@ p {
 
 
 /* blog section */
+
+
+/* gallery */
+
+
+/* QUALITY SECTION */
+
+.quality-section {
+    background: var(--primary);
+    padding: 80px 0;
+}
+
+.quality-container {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.quality-title {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+
+.quality-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: var(--secondary);
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+.quality-text {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #fff;
+    opacity: 0.95;
+}
+
+
+/* GALLERY SECTION */
+
+.gallery-section {
+    position: relative;
+    background: url('https://istanbul.nobili-design.com/storage/posts/50/900_luxury_living_room_Velar.jpg') center/cover fixed no-repeat;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.gallery-header {
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    width: 85%;
+    margin: auto;
+}
+
+.gallery-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+
+.gallery-title::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background: var(--primary);
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+}
+
+
+/* DRAG SLIDER */
+
+.gallery-slider {
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 12;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.gallery-slider img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 15px;
+    /* border-radius: 8px; */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.slide-track {
+    display: flex;
+    transition: 0.3s ease-out;
+}
+
+
+/* gallery */
 
 
 /* testimonials  */
@@ -2039,3 +2299,51 @@ p {
 
 
 /* footer end */
+
+
+/* contact buttons style */
+
+
+/* Gradient Background with Animation */
+
+.info-box {
+    background: linear-gradient(90deg, #ED1C24 50%, #231F20 50%);
+    background-size: 200% 100%;
+    background-position: left;
+    color: white;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    border-radius: 5px;
+    padding: 1.5rem 2rem;
+    min-height: 100px;
+    transition: background-position 0.5s ease;
+}
+
+
+/* Hover Animation */
+
+.info-box:hover {
+    background-position: right;
+}
+
+
+/* Icon Circle */
+
+.icon-circle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    color: #F4B400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+
+/* Optional Hover Effect for Icon */
+
+.info-box:hover .icon-circle-btn {
+    transform: scale(1.1);
+}
