@@ -1981,6 +1981,9 @@ p {
     z-index: 12;
     overflow: hidden;
     cursor: grab;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 .gallery-slider img {

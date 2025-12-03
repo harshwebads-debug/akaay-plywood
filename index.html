@@ -805,33 +805,59 @@
 
     <script>
         const slider = document.querySelector("#dragSlider");
-        const track = slider.querySelector(".slide-track");
-
         let isDown = false;
         let startX;
         let scrollLeft;
 
-        slider.addEventListener("mousedown", e => {
+        // DESKTOP DRAG
+        slider.addEventListener("mousedown", (e) => {
             isDown = true;
-            slider.classList.add("active");
             startX = e.pageX - slider.offsetLeft;
             scrollLeft = slider.scrollLeft;
+            slider.style.cursor = "grabbing";
         });
 
         slider.addEventListener("mouseleave", () => {
             isDown = false;
+            slider.style.cursor = "grab";
         });
 
         slider.addEventListener("mouseup", () => {
             isDown = false;
+            slider.style.cursor = "grab";
         });
 
-        slider.addEventListener("mousemove", e => {
+        slider.addEventListener("mousemove", (e) => {
             if (!isDown) return;
             e.preventDefault();
             const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 2;
+            const walk = (x - startX) * 1.5; // smoother tracking
             slider.scrollLeft = scrollLeft - walk;
+        });
+
+
+        // 📱 MOBILE TOUCH SUPPORT
+        slider.addEventListener("touchstart", (e) => {
+            isDown = true;
+            startX = e.touches[0].pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        }, {
+            passive: true
+        });
+
+        slider.addEventListener("touchend", () => {
+            isDown = false;
+        }, {
+            passive: true
+        });
+
+        slider.addEventListener("touchmove", (e) => {
+            if (!isDown) return;
+            const x = e.touches[0].pageX - slider.offsetLeft;
+            const walk = (x - startX) * 1.4;
+            slider.scrollLeft = scrollLeft - walk;
+        }, {
+            passive: true
         });
     </script>
 
